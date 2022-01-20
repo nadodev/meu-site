@@ -2,36 +2,33 @@ import React from "react";
 import {
   FaFacebookSquare,
   FaLinkedin,
-  FaDribbbleSquare,
   FaBehanceSquare,
-  FaTwitterSquare,
+  FaIns,
 } from "react-icons/fa";
+import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 
 const data = [
   {
     id: 1,
-    icon: <FaFacebookSquare className="social-icon"></FaFacebookSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
+    url: "https://www.linkedin.com/in/leonardo-geja-000a34201/",
   },
   {
     id: 2,
-    icon: <FaLinkedin className="social-icon"></FaLinkedin>,
-    url: "https://www.twitter.com",
+    icon: <AiFillGithub className="social-icon"></AiFillGithub>,
+    url: "https://www.github.com/nadodev/",
   },
+
   {
     id: 3,
-    icon: <FaDribbbleSquare className="social-icon"></FaDribbbleSquare>,
-    url: "https://www.twitter.com",
+    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
+    url: "https://www.behance.net/nadojbabbc0",
   },
+
   {
     id: 4,
-    icon: <FaBehanceSquare className="social-icon"></FaBehanceSquare>,
-    url: "https://www.twitter.com",
-  },
-  {
-    id: 5,
-    icon: <FaTwitterSquare className="social-icon"></FaTwitterSquare>,
-    url: "https://www.twitter.com",
+    icon: <AiFillInstagram className="social-icon"></AiFillInstagram>,
+    url: "https://www.instagram.com/leonardo_geja/",
   },
 ];
 

@@ -4,6 +4,7 @@
   height: 100vh;
   background: #fff;
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .hero-center {
@@ -15,12 +16,23 @@
 .hero-info {
   text-align: center;
 
+  span {
+    width: 100%;
+    color: var(--clr-dark);
+    text-align: center;
+    margin-bottom: 0;
+  }
   p {
     width: 100%;
     color: var(--clr-dark);
     text-align: center;
   }
-
+  h1 {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--clr-dark);
+  }
   .social-links {
     text-align: center;
     width: 100%;
@@ -42,7 +54,9 @@
   }
 }
 .hero-img2 {
-  display: none;
+  display: block;
+  width: 100%;
+  padding: 50px;
 }
 .hero-img-svg {
   display: none;
@@ -62,6 +76,9 @@
 }
 
 @media screen and (min-width: 992px) {
+  .hero_sobre {
+    margin-bottom: 0;
+  }
   .hero_sobre::before {
     content: "";
     position: absolute;
@@ -92,10 +109,24 @@
     grid-column: 1 / span 10;
     text-align: start;
 
+    span {
+      width: 100%;
+      color: var(--clr-dark);
+      text-align: left;
+      margin-bottom: 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      color: var(--clr-dark);
+    }
     p {
       width: 70%;
       color: var(--clr-dark);
       text-align: start;
+      line-height: 2;
     }
 
     .social-links {

@@ -7,9 +7,10 @@
   align-items: center;
   flex-direction: column;
   p {
-    font-size: 1rem;
+    font-size: 0.7rem;
     margin-top: 1rem;
     color: white;
+    text-align: center;
   }
   .social-links {
     text-align: center;
@@ -19,10 +20,24 @@
     align-items: center;
     margin-top: 3rem;
     svg {
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.5);
+        color: var(--clr-primary-6);
+      }
       margin: 0 1rem;
       width: 2rem;
       height: 2rem;
       color: white;
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    p {
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      color: white;
+      text-align: center;
     }
   }
 }

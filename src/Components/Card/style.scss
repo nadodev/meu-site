@@ -1,12 +1,14 @@
 .card {
   background: #fff;
   border: 1px solid #ccc;
-
   .hero-top {
+    width: 100%;
     img {
-      width: 100%;
+      width: 370px;
+      height: 200px;
       padding: 0;
       margin: 0;
+      object-fit: cover;
     }
     margin: 0;
     padding: 0;
@@ -34,5 +36,15 @@
     background-color: #eee;
     display: flex;
     justify-content: space-between;
+
+    a {
+      svg {
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          transform: scale(1.1);
+          color: cyan;
+        }
+      }
+    }
   }
 }

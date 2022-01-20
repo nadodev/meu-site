@@ -16,6 +16,15 @@
       color: var(--clr-dark);
       text-align: center;
     }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 3rem;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+    }
   }
 }
 @media screen and (min-width: 992px) {
