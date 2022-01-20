@@ -39,7 +39,7 @@ function Navbar() {
       <nav className="navbar" id="nav">
         <div className="nav-center">
           <div className="nav-header">
-            <h1>LOGO</h1>
+            <h1>LEONARDO.</h1>
             <button
               type="button"
               className="toggle-btn"
