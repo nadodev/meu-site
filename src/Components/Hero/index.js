@@ -17,7 +17,10 @@ const Hero = () => {
                 ad quis sunt distinctio porro dolore consequuntur repellendus,
                 velit animi quisquam.
               </p>
-              <a href="/contact" className="btn">
+              <a
+                href="https://www.notion.so/Curriculum-e8c53b6b9b404bdcb6cd95ee70d05b46#d04a8effe6b043cbb9316000b72a0a14"
+                className="btn"
+              >
                 Baixar CV
               </a>
               <div className="social-links">
