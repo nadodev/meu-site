@@ -1,0 +1,38 @@
+.card {
+  background: #fff;
+  border: 1px solid #ccc;
+
+  .hero-top {
+    img {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+    margin: 0;
+    padding: 0;
+  }
+  .hero-body {
+    text-align: center;
+    margin: 0;
+    padding: 2rem;
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    span {
+      background-color: #eee;
+      padding: 4px 10px;
+      margin-left: 1rem;
+      border-radius: 7px;
+    }
+  }
+
+  .hero-footer {
+    padding: 1rem;
+    background-color: #eee;
+    display: flex;
+    justify-content: space-between;
+  }
+}

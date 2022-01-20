@@ -1,0 +1,101 @@
+.conhecimentos {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  width: 100%;
+  background: #eee;
+  position: relative;
+  height: auto;
+  display: block;
+
+  .hero-card {
+    h1 {
+      color: var(--clr-dark);
+    }
+    p {
+      width: 100%;
+      color: var(--clr-dark);
+      text-align: center;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  .conhecimentos h4 {
+    font-size: 0.85rem;
+  }
+  .hero-info {
+    grid-row: 1/1;
+    grid-column: 1 / span 10;
+    text-align: start;
+    .hero-card {
+      h1 {
+        color: var(--clr-dark);
+      }
+      p {
+        width: 70%;
+        color: var(--clr-dark);
+        text-align: start;
+      }
+      .wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 3rem;
+        row-gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+      }
+      .hero-card-item {
+        width: 350px;
+        height: 300px;
+      }
+    }
+
+    .social-links {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 3rem;
+      margin-left: 0;
+      padding: 0;
+      svg {
+        margin: 0 2rem;
+        width: 2rem;
+        height: 2rem;
+        color: white;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .hero-img {
+    display: block;
+    grid-row: 1;
+    grid-column: 9/-1;
+    z-index: 999;
+  }
+  .hero-img-svg {
+    width: 100%;
+    position: relative;
+    display: block;
+    grid-row: 1/1;
+    grid-column: 7/-1;
+  }
+  .conhecimentos .underline {
+    margin-bottom: 0.5rem;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .conhecimentos h4 {
+    font-size: 1rem;
+  }
+
+  .hero-info {
+    grid-column: 1 / span 8;
+  }
+}
