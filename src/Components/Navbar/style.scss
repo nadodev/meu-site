@@ -13,12 +13,12 @@ Navbar
   display: flex;
   align-items: center;
   z-index: 200;
-  background: var(--clr-dark);
-
+  background: var(--light-shadow);
   -webkit-box-align: center;
   align-items: center;
   -webkit-transition: var(--transition);
   transition: var(--transition);
+  border-bottom: 1px solid rgba(107, 107, 107, 0.1);
 }
 
 .navbar-fixed {
@@ -30,6 +30,7 @@ Navbar
   background: var(--clr-dark) !important;
   box-shadow: var(--dark-shadow);
   z-index: 99999;
+  border-bottom: 3px solid rgba(107, 107, 107, 0.1);
 }
 .nav-center {
   width: 90vw;
@@ -94,7 +95,6 @@ Navbar
 
 @media screen and (min-width: 992px) {
   .navbar {
-    background: transparent;
     h1 {
       font-size: 2rem;
       color: var(--clr-white);

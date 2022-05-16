@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.scss";
 import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
+import "./style.scss";
 function Card({ image, title, link, git, tag1, tag2, tag3 }) {
   return (
     <div className="card">
@@ -17,9 +17,15 @@ function Card({ image, title, link, git, tag1, tag2, tag3 }) {
         </div>
       </div>
       <div className="hero-footer">
-        <a href={git} target="_blank" rel="noopener noreferrer">
-          <FaGithub color="#000" size={25} />
-        </a>
+        <>
+          {git ? (
+            <a href={git} target="_blank" rel="noopener noreferrer">
+              <FaGithub color="#000" size={25} />
+            </a>
+          ) : (
+            <FaGithub color="#000" size={25} class="sem-link" />
+          )}
+        </>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <FiLink color="#000" size={25} />
         </a>

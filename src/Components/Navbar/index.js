@@ -1,11 +1,12 @@
 import React from "react";
 import { FaAlignRight } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
-
 import pageLinks from "./links";
 import "./style.scss";
+
 function Navbar() {
   const [open, setOpen] = React.useState(false);
+
   React.useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "unset";
     window.addEventListener("scroll", function () {
@@ -20,20 +21,24 @@ function Navbar() {
 
     // show sidebar
   });
+
   const openSide = () => {
     const sidebar = document.querySelector("#sidebar");
     sidebar.classList.add("show-sidebar");
     setOpen(true);
   };
+
   const closeSide = () => {
     const sidebar = document.querySelector("#sidebar");
     sidebar.classList.remove("show-sidebar");
     setOpen(false);
   };
+
   const menu = (link) => {
     closeSide();
     window.scrollTo({ top: link, behavior: "smooth" });
   };
+
   return (
     <>
       <nav className="navbar" id="nav">

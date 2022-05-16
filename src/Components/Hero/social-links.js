@@ -1,11 +1,6 @@
 import React from "react";
-import {
-  FaFacebookSquare,
-  FaLinkedin,
-  FaBehanceSquare,
-  FaIns,
-} from "react-icons/fa";
-import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
+import { FaBehanceSquare, FaLinkedin } from "react-icons/fa";
 
 const data = [
   {

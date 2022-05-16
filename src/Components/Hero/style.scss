@@ -100,7 +100,7 @@
   .hero-img {
     display: block;
     z-index: 999;
-    width: 100%;
+    width: 80%;
     border-radius: 1rem;
     border-radius: 1rem !important;
   }
@@ -118,6 +118,7 @@
 
     h1 {
       width: 100%;
+      max-width: 500px;
       color: var(--clr-white);
       text-align: left;
       margin-bottom: 1rem;
@@ -196,5 +197,36 @@
 
   .hero h4 {
     line-height: 1;
+  }
+}
+
+.floating {
+  animation: floating 4s ease-in-out infinite;
+}
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
