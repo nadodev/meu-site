@@ -11,9 +11,10 @@ const Hero = () => {
               <span>Prazer, Eu sou Leonardo geja ✌</span>
               <h1>DESENVOLVEDOR FRONT END</h1>
               <p>
-                Esse é meu site pessoal. Aqui você pode ver algumas informações
+                Esse é meu site pessoal, aqui você pode ver algumas informações
                 sobre mim, como experiência, formação, contato e muito mais.
-                Abaixo tem meu CV, você pode baixar e imprimir.
+                <br />
+                Na próxima seção você encontra meu CV.
               </p>
               <a
                 href="https://api.whatsapp.com/send?phone=5549999195407&text=Ol%C3%A1%2C%20vamos%20bater%20um%20papo%3F"
