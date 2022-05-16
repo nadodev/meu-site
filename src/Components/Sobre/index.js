@@ -13,10 +13,11 @@ const Sobre = () => {
               <h1>Sobre mim</h1>
               <p>
                 Olá meu nome é Leonardo Geja, tenho 31 anos. atualmente moro no
-                interior de santa catarina, e trabalho como designer gráfico.
-                Curso UX/UI Designer/Front End na EBAC, e sou apaixonado por
-                Back End, e levo a vida de um autodidata. Tenho conhecimento de
-                HTML, CSS, REACT JS , NODE JS , entre outros.
+                interior de santa catarina, e trabalho como desenvolvedor Front
+                End. Curso UX/UI Designer/Front End na EBAC - SP, e sou
+                apaixonado por Back End/Front, e levo a vida de um autodidata.
+                Tenho conhecimento de HTML, CSS, REACT JS ,NEXTJS e NODE JS
+                ,entre outros.
               </p>
               <a
                 href="https://leonardogeja.dev.br/novoCurriculo.pdf"
