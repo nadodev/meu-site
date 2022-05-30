@@ -20,7 +20,7 @@ const Sobre = () => {
                 ,entre outros.
               </p>
               <a
-                href="https://leonardogeja.dev.br/novoCurriculo.pdf"
+                href="https://leonardogeja.dev.br/curriculo_Leonardo-Geja.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn"
