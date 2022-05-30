@@ -4,6 +4,9 @@ import imagem02 from "../../assets/2.png";
 import imagem03 from "../../assets/3.png";
 import imagem04 from "../../assets/4.png";
 import imagem05 from "../../assets/5.png";
+import imagem06 from "../../assets/6.png";
+import imagem07 from "../../assets/7.png";
+import imagem08 from "../../assets/8.png";
 import Card from "../Card";
 import "./style.scss";
 const Conhecimentos = () => {
@@ -57,6 +60,33 @@ const Conhecimentos = () => {
                   title="Site Pessoal"
                   git=""
                   link="https://leonardogeja.dev.br/"
+                  tag1="HTML"
+                  tag2="JAVASCRIPT"
+                  tag3="SCSS"
+                />
+                <Card
+                  image={imagem06}
+                  title="Site Wifreframe"
+                  git="https://github.com/nadodev/projeto-wireframe"
+                  link="https://wireframe.leonardogeja.dev.br/"
+                  tag1="HTML"
+                  tag2="JAVASCRIPT"
+                  tag3="SCSS"
+                />
+                <Card
+                  image={imagem07}
+                  title="Site de um desafio entre amigos"
+                  git="https://github.com/nadodev/lading-page-massa"
+                  link="https://massa.leonardogeja.dev.br/"
+                  tag1="HTML"
+                  tag2="JAVASCRIPT"
+                  tag3="SCSS"
+                />
+                <Card
+                  image={imagem08}
+                  title="Site banco Neon (Construção)"
+                  git="https://github.com/nadodev/projeto-neon"
+                  link="https://www.neon.leonardogeja.dev.br/"
                   tag1="HTML"
                   tag2="JAVASCRIPT"
                   tag3="SCSS"
