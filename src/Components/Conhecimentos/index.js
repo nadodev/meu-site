@@ -26,7 +26,7 @@ const Conhecimentos = () => {
               <p>Alguns Projetos feito em meus cursos</p>
               <Swiper
                 pagination={{
-                  type: "fraction",
+                  type: "custom",
                 }}
                 navigation={true}
                 modules={[Pagination, Navigation]}
