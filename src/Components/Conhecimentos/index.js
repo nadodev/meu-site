@@ -1,5 +1,7 @@
 import React from "react";
+import { Navigation, Pagination } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import imagem01 from "../../assets/1.png";
@@ -23,13 +25,15 @@ const Conhecimentos = () => {
               <h1>Projetos</h1>
               <p>Alguns Projetos feito em meus cursos</p>
               <Swiper
+                pagination={{
+                  type: "fraction",
+                }}
+                navigation={true}
+                modules={[Pagination, Navigation]}
+                className="mySwiper"
                 slidesPerView={3}
                 spaceBetween={50}
                 onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-                pagination={{
-                  clickable: true,
-                }}
                 breakpoints={{
                   340: {
                     slidesPerView: 1,
