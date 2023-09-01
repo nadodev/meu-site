@@ -18,7 +18,7 @@ import "./style.scss";
 const Conhecimentos = () => {
   return (
     <>
-      <div className="conhecimentos" id="projects">
+      <div className="conhecimentos" id="cases">
         <section className="section-center">
           <article className="hero-info">
             <div className="hero-card">

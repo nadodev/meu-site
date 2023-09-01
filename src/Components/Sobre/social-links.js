@@ -25,11 +25,11 @@ const data = [
     url: "https://www.behance.net/nadojbabbc0",
   },
 
-  {
-    id: 4,
-    icon: <AiFillInstagram className="social-icon"></AiFillInstagram>,
-    url: "https://www.instagram.com/leonardo_geja/",
-  },
+  // {
+  //   id: 4,
+  //   icon: <AiFillInstagram className="social-icon"></AiFillInstagram>,
+  //   url: "https://www.instagram.com/leonardo_geja/",
+  // },
 ];
 
 export default data;
