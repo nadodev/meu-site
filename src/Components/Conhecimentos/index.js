@@ -58,29 +58,6 @@ const Conhecimentos = () => {
                 }}
               >
                 <SwiperSlide>
-                  <Card
-                    image={imagem01}
-                    title="Loja Virtual"
-                    git="https://github.com/nadodev/projeto-filmes-tmdb"
-                    link="https://lojavirtual-dot.vercel.app/"
-                    tag1="HTML"
-                    tag2="React"
-                    tag3="SCSS"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <Card
-                    image={imagem02}
-                    title="Gerenciador De Tarefas"
-                    git="https://github.com/nadodev/todofront"
-                    link="https://tasksforday.herokuapp.com/sincronizar"
-                    tag1="React"
-                    tag2="SCSS"
-                    tag3="Api Node"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
                   {" "}
                   <Card
                     image={imagem03}
@@ -97,7 +74,7 @@ const Conhecimentos = () => {
                     image={imagem04}
                     title="Gerenciador de Tarefas"
                     git="https://github.com/nadodev/tarefas-redux-context"
-                    link="https://tarefa.leonardogeja.dev.br/"
+                    link="https://tarefas-redux-context.vercel.app/"
                     tag1="React"
                     tag2="Redux"
                     tag3="SCSS"
@@ -107,12 +84,12 @@ const Conhecimentos = () => {
                   {" "}
                   <Card
                     image={imagem05}
-                    title="Site Pessoal"
+                    title="Site Pessoal (Em construção)"
                     git=""
-                    link="https://leonardogeja.dev.br/"
-                    tag1="HTML"
+                    link="https://novo-site-sage.vercel.app/"
+                    tag1="VUE"
                     tag2="JAVASCRIPT"
-                    tag3="SCSS"
+                    tag3="TAILWINDCSS"
                   />
                 </SwiperSlide>
                 <SwiperSlide>
@@ -121,18 +98,7 @@ const Conhecimentos = () => {
                     image={imagem06}
                     title="Site Wifreframe"
                     git="https://github.com/nadodev/projeto-wireframe"
-                    link="https://wireframe.leonardogeja.dev.br/"
-                    tag1="HTML"
-                    tag2="JAVASCRIPT"
-                    tag3="SCSS"
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Card
-                    image={imagem07}
-                    title="Site de um desafio entre amigos"
-                    git="https://github.com/nadodev/lading-page-massa"
-                    link="https://massa.leonardogeja.dev.br/"
+                    link="https://projeto-curso-html.vercel.app/"
                     tag1="HTML"
                     tag2="JAVASCRIPT"
                     tag3="SCSS"
@@ -144,7 +110,7 @@ const Conhecimentos = () => {
                     image={imagem08}
                     title="Site banco Neon (Construção)"
                     git="https://github.com/nadodev/projeto-neon"
-                    link="https://www.neon.leonardogeja.dev.br/"
+                    link="https://projeto-wireframe-vlei.vercel.app/#"
                     tag1="HTML"
                     tag2="JAVASCRIPT"
                     tag3="SCSS"
