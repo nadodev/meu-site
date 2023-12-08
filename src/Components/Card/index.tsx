@@ -13,7 +13,10 @@ interface ICard {
   tag2:string
   tag3:string
 }
+
+
 function Card({ image, title, link, git, tag1, tag2, tag3 }: ICard) {
+  const linkGit = git ? '' : 'sem-link' ;
   return (
     <div className="card">
       <div className="hero-top">
@@ -29,13 +32,16 @@ function Card({ image, title, link, git, tag1, tag2, tag3 }: ICard) {
       </div>
       <div className="hero-footer">
         <>
-          {git ? (
-            <a href={git} target="_blank" rel="noopener noreferrer">
-              <FaGithub color="#000" size={25} />
-            </a>
-          ) : (
-            <FaGithub color="#000" size={25} className="sem-link" />
-          )}
+        <a
+          href={git}
+          target="_blank"
+          className={linkGit}
+          rel="noopener noreferrer"
+          onClick={git ? undefined  : (e) => e.preventDefault()}
+        >
+          <FaGithub color="#000" size={25} />
+        </a>
+       
         </>
         <a href={link} target="_blank" rel="noopener noreferrer">
           <FiLink color="#000" size={25} />
