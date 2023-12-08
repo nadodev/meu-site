@@ -1,9 +1,7 @@
 import React from "react";
 import {
-  FaFacebookSquare,
   FaLinkedin,
   FaBehanceSquare,
-  FaIns,
 } from "react-icons/fa";
 import { AiFillInstagram, AiFillGithub } from "react-icons/ai";
 

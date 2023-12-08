@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import { FaAlignRight } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
 import pageLinks from "./links";
@@ -6,42 +6,44 @@ import "./style.scss";
 
 function Navbar() {
   const [open, setOpen] = React.useState(false);
+  const [navbar, setNavBar] = React.useState(false)
+  const sidebarRef = useRef<HTMLDivElement>(null); 
 
   React.useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "unset";
-    window.addEventListener("scroll", function () {
-      const navbar = document.querySelector("#nav");
 
-      if (window.pageYOffset > 80) {
-        navbar.classList.add("navbar-fixed");
-      } else {
-        navbar.classList.remove("navbar-fixed");
+    const handleScroll = () => {
+      if (window.scrollY > 80) {
+        setNavBar(true);
+      }else {
+        setNavBar(false)
       }
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
     // show sidebar
-  });
 
   const openSide = () => {
-    const sidebar = document.querySelector("#sidebar");
-    sidebar.classList.add("show-sidebar");
     setOpen(true);
   };
 
   const closeSide = () => {
-    const sidebar = document.querySelector("#sidebar");
-    sidebar.classList.remove("show-sidebar");
     setOpen(false);
   };
 
-  const menu = (link) => {
+  const menu = (link: number) => {
     closeSide();
-    window.scrollTo({ top: link, behavior: "smooth" });
   };
 
   return (
     <>
-      <nav className="navbar" id="nav">
+      <nav className={`navbar ${navbar ? 'navbar-fixed' : ''}`} id="nav" ref={sidebarRef}>
         <div className="nav-center">
           <div className="nav-header">
             <h1>LEONARDO.</h1>
@@ -65,12 +67,12 @@ function Navbar() {
           </div>
         </div>
       </nav>
-      <aside class="sidebar" id="sidebar">
+      <aside className={`sidebar ${open ? 'show-sidebar' : ''}`} id="sidebar">
         <div>
-          <button class="close-btn" id="close-btn" onClick={() => closeSide()}>
+          <button className="close-btn" id="close-btn" onClick={() => closeSide()}>
             <FiX />
           </button>
-          <ul class="sidebar-links">
+          <ul className="sidebar-links">
             <li onClick={() => menu(0)}>
               <a href="#home">home</a>
             </li>
@@ -81,30 +83,30 @@ function Navbar() {
               <a href="#projects">projects</a>
             </li>
           </ul>
-          <ul class="social-icons">
+          <ul className="social-icons">
             <li>
-              <a href="https://www.twitter.com" class="social-icon">
-                <i class="fab fa-facebook"></i>
+              <a href="https://www.twitter.com" className="social-icon">
+                <i className="fab fa-facebook"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com" class="social-icon">
-                <i class="fab fa-linkedin"></i>
+              <a href="https://www.twitter.com" className="social-icon">
+                <i className="fab fa-linkedin"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com" class="social-icon">
-                <i class="fab fa-squarespace"></i>
+              <a href="https://www.twitter.com" className="social-icon">
+                <i className="fab fa-squarespace"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com" class="social-icon">
-                <i class="fab fa-behance"></i>
+              <a href="https://www.twitter.com" className="social-icon">
+                <i className="fab fa-behance"></i>
               </a>
             </li>
             <li>
-              <a href="https://www.twitter.com" class="social-icon">
-                <i class="fab fa-instagram"></i>
+              <a href="https://www.twitter.com" className="social-icon">
+                <i className="fab fa-instagram"></i>
               </a>
             </li>
           </ul>

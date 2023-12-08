@@ -2,7 +2,18 @@ import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { FiLink } from "react-icons/fi";
 import "./style.scss";
-function Card({ image, title, link, git, tag1, tag2, tag3 }) {
+
+
+interface ICard {
+  image: string
+  title:string
+  git:string
+  link:string
+  tag1:string
+  tag2:string
+  tag3:string
+}
+function Card({ image, title, link, git, tag1, tag2, tag3 }: ICard) {
   return (
     <div className="card">
       <div className="hero-top">
@@ -23,7 +34,7 @@ function Card({ image, title, link, git, tag1, tag2, tag3 }) {
               <FaGithub color="#000" size={25} />
             </a>
           ) : (
-            <FaGithub color="#000" size={25} class="sem-link" />
+            <FaGithub color="#000" size={25} className="sem-link" />
           )}
         </>
         <a href={link} target="_blank" rel="noopener noreferrer">

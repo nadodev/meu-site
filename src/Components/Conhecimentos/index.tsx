@@ -4,14 +4,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
-import imagem01 from "../../assets/1.png";
-import imagem02 from "../../assets/2.png";
 import imagem03 from "../../assets/3.png";
 import imagem04 from "../../assets/4.png";
 import imagem05 from "../../assets/5.png";
 import imagem06 from "../../assets/6.png";
-import imagem07 from "../../assets/7.png";
 import imagem08 from "../../assets/8.png";
+
 import Card from "../Card";
 import "./style.scss";
 
