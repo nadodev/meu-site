@@ -19,7 +19,7 @@ export const Footer = () => {
             );
           })}
         </div>
-        <p>COPYRIGHT©2023 LEONARDO GEJA - ALL RIGHTS RESERVED</p>
+        <p>COPYRIGHT©2024 LEONARDO GEJA - ALL RIGHTS RESERVED</p>
       </footer>
     </>
   );
