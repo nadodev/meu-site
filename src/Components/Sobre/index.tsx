@@ -2,7 +2,7 @@ import React from "react";
 import main from "../../assets/eu.jpg";
 import socialLinks from "./social-links";
 import "./style.scss";
-const Sobre = () => {
+export const Sobre = () => {
   return (
     <>
       <header className="hero_sobre" id="about">
@@ -12,7 +12,15 @@ const Sobre = () => {
               <span> ✍ Abaixo um pouco </span>
               <h1>Sobre mim</h1>
               <p>
-              Olá, sou Leonardo Geja, um desenvolvedor Back End focado em PHP e JavaScript, atualmente estudando Front End. Com experiência em HTML, CSS, React JS, Next.js e Node.js, Typescript, PHP, Laravel, estou comprometido em criar soluções de alta qualidade. Resido em Santa Catarina e estou sempre em busca de desafios para crescer profissionalmente.
+              Olá, meu nome é Leonardo Geja. 
+              Sou um desenvolvedor Back End com foco principal em PHP e JavaScript, 
+              e estou empenhado em expandir meus conhecimentos para o Front End. 
+              Possuo experiência sólida em HTML, CSS, React JS, Next.js, Node.js, 
+              Typescript e PHP, especialmente em frameworks como Laravel. 
+              Meu compromisso é criar soluções de alta qualidade e estou 
+              constantemente buscando desafios que me permitam crescer 
+              profissionalmente. Resido Joaçaba Santa Catarina e estou 
+              entusiasmado para enfrentar novos projetos e oportunidades.
               </p>
               <a
                 href="https://drive.google.com/file/d/1t710DLc0u7tOFeLTbuLOHrgBTN4JmfIB/view?usp=sharing"
@@ -45,4 +53,3 @@ const Sobre = () => {
   );
 };
 
-export default Sobre;

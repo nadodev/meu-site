@@ -13,15 +13,15 @@ import imagem08 from "../../assets/8.png";
 import Card from "../Card";
 import "./style.scss";
 
-const Conhecimentos = () => {
+export const Conhecimentos = () => {
   return (
     <>
-      <div className="conhecimentos" id="cases">
+      <div className="conhecimentos" id="projects">
         <section className="section-center">
           <article className="hero-info">
             <div className="hero-card">
               <h1>Projetos</h1>
-              <p>Alguns Projetos feito em meus cursos</p>
+              <p>Alguns projetos realizado durante minha carreira</p>
               <Swiper
                 pagination={{
                   type: "custom",
@@ -31,7 +31,6 @@ const Conhecimentos = () => {
                 className="mySwiper"
                 slidesPerView={3}
                 spaceBetween={50}
-                onSlideChange={() => console.log("slide change")}
                 breakpoints={{
                   340: {
                     slidesPerView: 1,
@@ -123,4 +122,3 @@ const Conhecimentos = () => {
   );
 };
 
-export default Conhecimentos;

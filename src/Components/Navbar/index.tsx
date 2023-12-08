@@ -4,7 +4,7 @@ import { FiX } from "react-icons/fi";
 import pageLinks from "./links";
 import "./style.scss";
 
-function Navbar() {
+export function Navbar() {
   const [open, setOpen] = React.useState(false);
   const [navbar, setNavBar] = React.useState(false)
   const sidebarRef = useRef<HTMLDivElement>(null); 
@@ -115,5 +115,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;

@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.scss";
 import socialLinks from "./social-links";
-const Footer = () => {
+export const Footer = () => {
   return (
     <>
       <footer className="footer">
@@ -25,4 +25,3 @@ const Footer = () => {
   );
 };
 
-export default Footer;
