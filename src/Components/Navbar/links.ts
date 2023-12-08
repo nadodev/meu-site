@@ -12,7 +12,7 @@ const data = [
   {
     id: 3,
     text: "Cases",
-    url: "#cases",
+    url: "#projects",
   },
 ];
 

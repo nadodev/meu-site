@@ -25,7 +25,7 @@ export function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [open]);
 
     // show sidebar
 
